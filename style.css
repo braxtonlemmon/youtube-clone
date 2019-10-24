@@ -1,0 +1,137 @@
+/* universal */
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	display: block;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+	overflow-y: scroll;
+}
+
+/* header */
+header {
+	display: inline-flex;
+	background-color: white;
+	height: 56px;
+	width: 100%;
+	padding: 5px 0;
+}
+
+nav {
+	background-color: white;
+	width: 30%;
+	height: 100%;
+}
+
+	/* search box */
+.search-bar {
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+	margin: auto;
+	background-color: white;
+	padding-top: 5px;
+}
+#search-form {
+	width: 100%;
+	display: flex;
+	position: relative;
+}
+
+.search-input {
+	width: 100%;
+	font-size: 20px;
+	color: rgb(87, 87, 87);
+	border: 1px solid rgb(128, 128, 128);
+	border-right: none;
+	height: 32px;
+	border-radius: 1px 0 0 1px;
+	outline: none;
+	color #9DBFAF;
+	padding-left: 6px;
+}
+
+.search-button {
+	width: 40px;
+	height: 36px;
+	border: 1px solid #00B4CC;
+	text-align: center;
+	background-color: rgb(211, 211, 211);
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.magnify {
+	height: 1.1em;
+	background-color: white;
+}
+
+/* header nav links */
+.left-links {
+	width: 200px;
+}
+
+.right-links {
+	float: right;
+	width: 300px;
+	padding-left: 100px;
+}
+
+.left-links img, .right-links img {
+	height: 28px;
+	padding: 8px 6px;
+	cursor: pointer;
+}
+
+/* main body content */
+.columns {
+	padding-top: 24px;
+	width: 70%;
+	margin: auto;
+}
+
+/* generic left column on page */
+.left-column {
+	float: left;
+	min-width: 300px;
+	width: 500px;
+	display: block;
+
+	margin-left: 70px;
+	padding-right: 24px;
+}
+/* main video */
+.video-player {
+	background-color: green;
+	min-height: 350px;
+}
+
+/* description area */
+.description {
+	background-color: pink;
+	min-height: 200px;
+}
+
+/* comments area */
+.comments {
+	background-color: orange;
+	min-height: 300px;
+}
+
+/* sidebar */
+aside {
+	background-color: red;
+	min-width: 300px;
+	max-width: 400px;
+	height: 1000px;
+	display: flex;
+}
