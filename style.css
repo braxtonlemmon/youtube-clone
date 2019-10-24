@@ -17,6 +17,16 @@ body {
 	overflow-y: scroll;
 }
 
+h1 {
+	font-size: 18px;
+	font-weight: normal;
+}
+h3 {
+	font-size: 14px;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+
 /* header */
 header {
 	display: inline-flex;
@@ -34,6 +44,7 @@ nav {
 	width: 30%;
 	height: 100%;
 }
+
 
 /* search box */
 .search-bar {
@@ -80,6 +91,7 @@ nav {
 	background-color: white;
 }
 
+
 /* header nav links */
 .left-links {
 	min-width: 200px;
@@ -99,22 +111,24 @@ nav {
 	cursor: pointer;
 }
 
+
 /* main body content */
 .columns {
 	position: relative;
 	padding-top: 100px;
 	width: 85%;
 	margin: auto;
+	display: flex;
 }
 
 
 /* generic left column on page */
 .left-column {
 	float: left;
-
 	width: 65%;
 	display: block;
-	padding-right: 50px;
+	padding-right: 30px;
+	min-width: 480px;
 }
 
 
@@ -134,22 +148,108 @@ nav {
 	position: absolute;
 }
 
+
+/* info area */
+.info {
+	background-color: #f9f9f9;
+	margin-top: 20px;
+	min-height: 100px;
+}
+
+.info p {
+	color: grey;
+	font-size: 14px;
+}
+.info img {
+	height: 24px;
+	float: right;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+
 /* description area */
 .description {
-	background-color: pink;
-	min-height: 200px;
+	background-color: #f9f9f9;
+	min-height: 150px;
+	margin-top: 20px;
+	font-size: 14px;
 }
+
+#tasty {
+	border-radius: 50%;
+	float: left;
+	width: 40px;
+	cursor: pointer;
+}
+
+#subscribe {
+	float: right;
+	height: 35px;
+	cursor: pointer;
+}
+
+.description-text {
+	display: inline-block;
+	padding-left: 5px;
+}
+.description a {
+	text-decoration: none;
+}
+
+#author {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#show-more {
+	cursor: pointer;
+}
+
+#subscribers, #show-more {
+	color: gray;
+}
+
 
 /* comments area */
 .comments {
 	background-color: orange;
 	min-height: 300px;
+	margin: 20px 0;
 }
+
 
 /* sidebar */
 aside {
-	background-color: red;
+	background-color: #f9f9f9;
 	width: 30%;
 	height: 1000px;
-	display: flex;
+
 }
+
+.preview-box {
+	background-color: #f9f9f9;
+	margin: 5px 0;
+	display: flex;
+	align-items: flex-start;
+
+	
+}
+
+.preview-box img {
+	padding-top: 10px;
+	padding-right: 10px;
+	width: 40%;
+	cursor: pointer;
+}
+
+.preview-text {
+	cursor: pointer;
+}
+.preview-text p {
+	font-size: 13px;
+	font-weight: 500;
+	margin: 0;
+	color: grey;
+}
+
