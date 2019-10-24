@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	background-color: grey;
+	background-color: #f9f9f9;
 	overflow-y: scroll;
 }
 
@@ -24,6 +24,9 @@ header {
 	height: 56px;
 	width: 100%;
 	padding: 5px 0;
+	position: fixed;
+	margin-bottom: 10px;
+	z-index: 99;
 }
 
 nav {
@@ -32,7 +35,7 @@ nav {
 	height: 100%;
 }
 
-	/* search box */
+/* search box */
 .search-bar {
 	width: 100%;
 	height: 100%;
@@ -41,7 +44,9 @@ nav {
 	background-color: white;
 	padding-top: 5px;
 }
+
 #search-form {
+	min-width: 300px;
 	width: 100%;
 	display: flex;
 	position: relative;
@@ -77,42 +82,56 @@ nav {
 
 /* header nav links */
 .left-links {
+	min-width: 200px;
 	width: 200px;
 }
 
 .right-links {
 	float: right;
+	min-width: 300px;
 	width: 300px;
 	padding-left: 100px;
 }
 
 .left-links img, .right-links img {
-	height: 28px;
+	height: 45%;
 	padding: 8px 6px;
 	cursor: pointer;
 }
 
 /* main body content */
 .columns {
-	padding-top: 24px;
-	width: 70%;
+	position: relative;
+	padding-top: 100px;
+	width: 85%;
 	margin: auto;
 }
+
 
 /* generic left column on page */
 .left-column {
 	float: left;
-	min-width: 300px;
-	width: 500px;
-	display: block;
 
-	margin-left: 70px;
-	padding-right: 24px;
+	width: 65%;
+	display: block;
+	padding-right: 50px;
 }
+
+
 /* main video */
 .video-player {
 	background-color: green;
-	min-height: 350px;
+	height: 0;
+	width: 100%;
+	position: relative;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
+
+.video-player iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
 }
 
 /* description area */
@@ -130,8 +149,7 @@ nav {
 /* sidebar */
 aside {
 	background-color: red;
-	min-width: 300px;
-	max-width: 400px;
+	width: 30%;
 	height: 1000px;
 	display: flex;
 }
